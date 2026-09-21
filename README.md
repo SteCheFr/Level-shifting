@@ -7,7 +7,8 @@ In reality, level shifting is only necessary in the **CN105 → ESPxx direction*
 To implement level shifting in the **CN105 → ESPxx direction**, it is possible to use an integrated circuit specifically designed for logic level conversion, as presented in **Echavet's** GitHub project. However, this solution is difficult to implement in the **CN105-2HA**, as it would require a major redesign of the current module. Another, much simpler solution to integrate is to use a **voltage divider** made of two resistors on the **TX signal** coming from the **CN105** connector. This voltage divider reduces the signal voltage before it reaches the **ESPxx GPIO**, so that the **ESPxx** receives a voltage of approximately 3.3 V, compatible with its electrical specifications.
 
 
-<img width="500" height="500" alt="Explanation" src="https://github.com/user-attachments/assets/35598d2f-b2b9-4823-9945-b85409d2629e" />
+
+<img width="400" height="400" alt="Explanation" src="https://github.com/user-attachments/assets/35598d2f-b2b9-4823-9945-b85409d2629e" />
 
 
 
